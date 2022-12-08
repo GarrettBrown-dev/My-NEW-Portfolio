@@ -46,7 +46,7 @@ canvas {
 
 header {
   background: var(--dark-bg);
-  grid-column: 4 / span 5;
+  grid-column: 4 / 10;
   font-size: 2.5rem;
   padding: 2rem;
   margin-bottom: var(--spacing);
@@ -67,7 +67,7 @@ section {
 blockquote {
   margin: 0;
   padding: 0;
-  grid-column: 2 / span 9;
+  grid-column: 4 / 10;
   margin-bottom: var(--spacing);
   text-align: center;
 }
