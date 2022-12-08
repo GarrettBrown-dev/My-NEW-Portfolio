@@ -31,7 +31,7 @@ const torus = new THREE.Mesh(geometry, material);
 scene.add(torus);
 
 const pointLight = new THREE.PointLight(0xffffff);
-pointLight.position.set(4, 4, 4);
+pointLight.position.set(6, 6, 6);
 
 const ambientLight = new THREE.AmbientLight(0xffffff);
 scene.add(pointLight, ambientLight);
@@ -73,27 +73,27 @@ scene.background = spaceTexture;
 
 //Moon
 
-const moonTexture = new THREE.TextureLoader().load("img/moon.jpg");
-const normalTexture = new THREE.TextureLoader().load("img/normal.jpg");
+// const moonTexture = new THREE.TextureLoader().load("img/moon.jpg");
+// const normalTexture = new THREE.TextureLoader().load("img/normal.jpg");
 
-const moon = new THREE.Mesh(
-  new THREE.SphereGeometry(3, 32, 32),
-  new THREE.MeshStandardMaterial({ map: moonTexture, normalMap: normalTexture })
-);
+// const moon = new THREE.Mesh(
+//   new THREE.SphereGeometry(3, 32, 32),
+//   new THREE.MeshStandardMaterial({ map: moonTexture, normalMap: normalTexture })
+// );
 
 // scene.add(moon);
 
-moon.position.z = 30;
-moon.position.setX(-10);
+// moon.position.z = 30;
+// moon.position.setX(-10);
 
 function moveCamera() {
   const t = document.body.getBoundingClientRect().top;
-  moon.rotation.x += 0.05;
-  moon.rotation.y += 0.075;
-  moon.rotation.z += 0.05;
+  // moon.rotation.x += 0.05;
+  // moon.rotation.y += 0.075;
+  // moon.rotation.z += 0.05;
 
-  garrett.rotation.y += 0.01;
-  garrett.rotation.z += 0.01;
+  // garrett.rotation.y += 0.01;
+  // garrett.rotation.z += 0.01;
 
   camera.position.x = t * -0.0002;
   camera.position.y = t * -0.0002;

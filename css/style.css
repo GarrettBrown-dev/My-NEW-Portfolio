@@ -54,10 +54,10 @@ header {
 }
 
 section {
-  grid-column: 2 / 8;
+  grid-column: 3 / 10;
   padding: 1rem;
   background: var(--dark-bg);
-  font-size: 1.25rem;
+  font-size: 1.75rem;
   line-height: 1.5;
   margin-bottom: var(--spacing);
 }
@@ -67,6 +67,7 @@ blockquote {
   padding: 0;
   grid-column: 2 / span 9;
   margin-bottom: var(--spacing);
+  text-align: center;
 }
 
 blockquote p {
