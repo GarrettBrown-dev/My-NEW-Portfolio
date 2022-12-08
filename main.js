@@ -31,7 +31,7 @@ const torus = new THREE.Mesh(geometry, material);
 scene.add(torus);
 
 const pointLight = new THREE.PointLight(0xffffff);
-pointLight.position.set(5, 5, 5);
+pointLight.position.set(4, 4, 4);
 
 const ambientLight = new THREE.AmbientLight(0xffffff);
 scene.add(pointLight, ambientLight);
@@ -62,14 +62,14 @@ scene.background = spaceTexture;
 
 //Me Squared
 
-const garrettTexture = new THREE.TextureLoader().load("img/Portfolio-Pic.jpg");
+// const garrettTexture = new THREE.TextureLoader().load("img/Portfolio-Pic.jpg");
 
-const garrett = new THREE.Mesh(
-  new THREE.BoxGeometry(3, 3, 3),
-  new THREE.MeshBasicMaterial({ map: garrettTexture })
-);
+// const garrett = new THREE.Mesh(
+//   new THREE.BoxGeometry(3, 3, 3),
+//   new THREE.MeshBasicMaterial({ map: garrettTexture })
+// );
 
-scene.add(garrett);
+// scene.add(garrett);
 
 //Moon
 
