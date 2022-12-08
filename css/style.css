@@ -35,6 +35,7 @@ blockquote {
   font-family: elevon, sans-serif;
   font-weight: 700;
   font-style: normal;
+  text-align: center;
 }
 
 canvas {
@@ -51,10 +52,11 @@ header {
   margin-bottom: var(--spacing);
   margin-left: auto;
   margin-right: auto;
+  text-align: center;
 }
 
 section {
-  grid-column: 3 / 10;
+  grid-column: 4 / 10;
   padding: 1rem;
   background: var(--dark-bg);
   font-size: 1.75rem;
