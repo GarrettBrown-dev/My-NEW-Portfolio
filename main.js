@@ -55,7 +55,7 @@ function addStar() {
   scene.add(star);
 }
 
-Array(200).fill().forEach(addStar);
+Array(650).fill().forEach(addStar);
 
 const spaceTexture = new THREE.TextureLoader().load("img/space.jpg");
 scene.background = spaceTexture;
