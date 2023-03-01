@@ -2,6 +2,7 @@ import "./css/style.css";
 import * as THREE from "three";
 //import { GridHelper } from "three";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
+import imgUrl from "./public/img/space.jpg";
 
 const scene = new THREE.Scene();
 
@@ -57,7 +58,7 @@ function addStar() {
 
 Array(650).fill().forEach(addStar);
 
-const spaceTexture = new THREE.TextureLoader().load("./public/img/space.jpg");
+const spaceTexture = new THREE.TextureLoader().load(imgUrl);
 scene.background = spaceTexture;
 
 //Me Squared
